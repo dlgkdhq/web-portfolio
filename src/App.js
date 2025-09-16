@@ -25,6 +25,7 @@ function App() {
                 ))}
               </span>
             </li>
+            <li><span className='label'>참여인원</span><span className='value'>4명</span></li>
             <li><span className='label'>내용</span>
               <span className='value'>
                 사용자의 목표에 맞춘 식단과 운동 콘텐츠를 추천하고, 개인의 건강 변화를 기록할 수 있는 웹 서비스입니다.
@@ -52,6 +53,7 @@ function App() {
                 ))}
               </span>
             </li>
+            <li><span className='label'>참여인원</span><span className='value'>5명</span></li>
             <li><span className='label'>내용</span>
               <span className='value'>
                 소규모 기업 및 팀 단위 사용자를 위한 일정과 할 일을 한 눈에 관리할 수 있는 서비스입니다.
@@ -78,6 +80,7 @@ function App() {
                 ))}
               </span>
             </li>
+            <li><span className='label'>참여인원</span><span className='value'>4명</span></li>
             <li><span className='label'>내용</span>
               <span className='value'>
                 전기차와 일반 차량 모두를 위한 주유소·충전소 통합 경로 안내 서비스입니다.<br></br>

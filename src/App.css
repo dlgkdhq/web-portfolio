@@ -1,38 +1,160 @@
-.App {
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: #f5f6fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* 제목 */
+h1 {
   text-align: center;
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin: 50px 0 30px 0;
+  letter-spacing: 1px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* 컨테이너 */
+.pf-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 40px;
+  padding: 0 20px 40px;
+}
+
+/* 포트폴리오 콘텐츠 */
+.pf-contents {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.pf-contents:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* 비디오 */
+.pf-video {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.pf-video:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+/* 상세 정보 */
+.pf-detail {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pf-detail h2 {
+  font-size: 1.6rem;
+  color: #2e4153;
+  margin-bottom: 15px;
+  border-left: 5px solid #3498db;
+  padding-left: 10px;
+}
+
+.pf-git a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.pf-detail a:hover {
+  color: #1d83c7;
+}
+
+.pf-meta{
+  padding-left: 20px;
+}
+
+.pf-meta li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #e6e9ec;
+}
+
+.pf-meta li:last-child {
+  border-bottom: none;
+}
+
+.pf-meta .label {
+  width: 80px;
+  flex-shrink: 0;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.pf-meta .value {
+  color: #555;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tech-item {
+  background-color: #eee;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 15px;
+  color: #333;
+}
+
+/* 반응형 처리 */
+@media screen and (max-width: 430px) {
+  .pf-contents {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .pf-detail {
+    width: 100%;
+  }
+
+  .pf-video {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  .pf-meta{
+    padding: 0;
+  }
+
+  .pf-meta li {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .pf-meta .label {
+    width: 100%;
+    text-align: center;
   }
 }

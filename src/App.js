@@ -12,7 +12,7 @@ function App() {
 
       <div className='pf-contents'>
         <div>
-          <video src='/videos/pf1.mp4' className='pf-video' controls muted></video>
+          <video src='https://dlgkdhq.github.io/web-portfolio/videos/pf1.mp4' className='pf-video' controls muted></video>
         </div>
         <div className='pf-detail'>
           <h2>사용자 목표에 맞는 식단/운동 추천 및 개인 기록 서비스</h2>
@@ -39,7 +39,7 @@ function App() {
 
       <div className='pf-contents'>
         <div>
-          <video src='/videos/pf2.mp4' className='pf-video' controls muted></video>
+          <video src='https://dlgkdhq.github.io/web-portfolio/videos/pf2.mp4' className='pf-video' controls muted></video>
         </div>
         <div className='pf-detail'>
           <h2>기업 스케줄 및 할 일 관리 서비스</h2>
@@ -65,7 +65,7 @@ function App() {
 
       <div className='pf-contents'>
         <div>
-          <video src='/videos/pf3.mp4' className='pf-video' controls muted></video>
+          <video src='https://dlgkdhq.github.io/web-portfolio/videos/pf3.mp4' className='pf-video' controls muted></video>
         </div>
         <div className='pf-detail'>
           <h2>위치·차량 정보 기반 주유소·충전소 통합 경로 안내 서비스</h2>
